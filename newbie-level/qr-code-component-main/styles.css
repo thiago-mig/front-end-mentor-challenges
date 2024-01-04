@@ -24,6 +24,7 @@ main {
   max-width: 225px;
   padding: 6px;
   border-radius: 16px;
+  box-shadow: 15px 15px 26px -25px hsl(220, 15%, 55%);
 }
 
 img {
