@@ -42,14 +42,15 @@ main {
   flex-direction: column;
   align-items:flex-start;
   justify-content: space-around;
-  gap: 12px;
+  gap: 16px;
   background-color: rgb(255, 255, 255);
   max-width: 400px;
-  height: 500px;
+  max-height: 550px;
   padding: 18px;
   border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 8px 8px rgb(18, 18, 18);
 }
 
 img {
@@ -86,6 +87,7 @@ figure {
 }
 
 figure > img {
+  margin: 5px 0px;
   width: 30px;
   height: 30px;
 }
