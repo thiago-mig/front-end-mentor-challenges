@@ -70,6 +70,27 @@ h1 {
   font-weight: 800;
 }
 
+h1:hover {
+  color: rgb(244, 208, 78);
+}
+
 h1 ~ p {
   color:hsl(0, 0%, 50%)
+}
+
+figure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+figure > img {
+  width: 30px;
+  height: 30px;
+}
+
+figcaption {
+  font-size: 0.84em;
+  font-weight: 800;
 }
