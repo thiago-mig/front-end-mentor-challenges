@@ -60,20 +60,87 @@ img {
 
 h1 {
   font-size: 1.1em;
-  color: rgb(255, 255, 255);
   margin: 15px 0px;
   font-weight: 600;
 }
 
-h1:hover {
-  cursor: pointer;
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+h1 a:hover {
   color: rgb(0, 255, 247);
+  opacity: 1;
   transition: all 0.35s ease-in-out;
 }
 
-p:first-of-type {
+p {
   color: hsl(215, 51%, 70%);
+}
+
+
+p:first-of-type {
   font-weight: 300;
   font-size: 0.95em;
   margin-bottom: 15px;
+}
+
+p:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.8em;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(47, 65, 91);
+  margin-bottom: 10px;
+}
+
+span:first-child {
+  color: rgb(0, 255, 247);
+  font-weight: 600;
+}
+
+span:first-child::before {
+  content: url('./images/icon-ethereum.svg');
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+
+span:last-child {
+  font-weight: 400;
+}
+
+span:last-child::before {
+  content: url('images/icon-clock.svg');
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: stretch;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.card-footer img {
+  height: 35px;
+  width: 35px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-footer p {
+  padding-top: 5px;
+}
+
+p a:hover {
+  color: rgb(0, 255, 247);
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
 }
