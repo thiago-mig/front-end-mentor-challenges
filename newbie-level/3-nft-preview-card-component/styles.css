@@ -33,6 +33,7 @@ main {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .img-container::after {
