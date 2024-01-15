@@ -31,7 +31,43 @@ section {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  
+  box-shadow: 1px 10px 20px rgb(167, 186, 205);
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  gap: 15px;
+}
+
+h1, h2 {
+  color: rgb(31, 47, 86);
+  text-align: center;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+}
+
+.plan-section {
+  background-color: hsl(225, 100%, 94%);
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.plan-section::before {
+  content: url('images/icon-music.svg');
+}
+
 
 
