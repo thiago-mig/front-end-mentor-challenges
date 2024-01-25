@@ -104,5 +104,11 @@ p {
 
 .card__content a::before {
   content: url('./images/icon-cart.svg');
-  text-align: justify;
+  vertical-align: -20%;
+  margin-right: 10%;
 }
+
+.card__content a:hover {
+  background-color: rgb(23, 53, 42);
+}
+
