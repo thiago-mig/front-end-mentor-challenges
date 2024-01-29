@@ -91,9 +91,9 @@ p {
 
 .card__content a {
   background-color: rgb(60, 128, 103);
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
-  padding: 5% 20%;
+  padding: .8rem;
   font-size: .8rem;
   font-weight: 700;
   text-decoration: none;
@@ -107,7 +107,7 @@ p {
 .card__content a::before {
   content: url('./images/icon-cart.svg');
   vertical-align: -20%;
-  margin-right: 10%;
+  margin-right: .8rem;
 }
 
 .card__content a:hover {
@@ -116,7 +116,7 @@ p {
 
 @media screen and (max-width: 620px){
   main {
-    padding: 20px;
+    padding: 1.7rem .05rem;
   }
   .card {
     flex-direction: column;
@@ -136,16 +136,21 @@ p {
     max-height: 40%;
   }
 
-  h3 {
-    padding: 4%;
-  }
-
-  h1 {
-    padding: 4%;
+  h3, h1, .card__content p, .card__content__prices {
+    padding: 2% 4%;
   }
 
   .card__content p {
-    padding: 4%;
+    max-width: 320px;
+    overflow-wrap: break-word;
   }
-  
+
+  .card__content__prices {
+    max-width: 65%;
+  }
+
+  .card__content a {
+    width: 92%;
+    margin: 1.2rem auto;
+  }
 }
