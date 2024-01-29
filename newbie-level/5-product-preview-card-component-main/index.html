@@ -19,7 +19,11 @@
   <main>
     <section class="card">
       <section>
-        <img src="images/image-product-desktop.jpg" alt="parfum product image">
+        <picture>
+          <source media="(min-width: 620px)" srcset="./images/image-product-desktop.jpg" sizes="">
+          <source media="(max-width: 619px)" srcset="./images/image-product-mobile.jpg" sizes="">
+          <img src="images/image-product-desktop.jpg" alt="parfum product image">
+        </picture>
       </section>
       <section class="card__content">
         <h3>Perfume</h3>
@@ -37,7 +41,7 @@
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Thiago Miguel da Costa</a>.
   </footer>
 </body>
 </html>
